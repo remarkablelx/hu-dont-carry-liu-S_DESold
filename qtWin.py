@@ -337,14 +337,6 @@ class MainWindow(QMainWindow):
 
         return page
 
-    def update_tips(self):
-        tip_text = (
-            "1. 二进制暴力破解要求明密文为8位的01组合。\n"
-            "2. ASCII和Unicode暴力破解要求明密文长度一致。\n"
-            "3. 请确保输入格式正确。"
-        )
-        self.tip_label.setText(tip_text)
-
     def update_hints(self):
         hint_text = (
             "1. 二进制加解密要求明密文为8位的01组合。\n"
@@ -352,6 +344,14 @@ class MainWindow(QMainWindow):
             "3. 请确保输入格式正确。"
         )
         self.hint_label.setText(hint_text)
+
+    def update_tips(self):
+        tip_text = (
+            "1. 二进制暴力破解要求明密文为8位的01组合。\n"
+            "2. ASCII和Unicode暴力破解要求明密文长度一致。\n"
+            "3. 请确保输入格式正确。"
+        )
+        self.tip_label.setText(tip_text)
 
     # 通过index确定当前选择的模式，切换对应的在S_DES定义好的函数
     def change_endecryption_type(self, index):

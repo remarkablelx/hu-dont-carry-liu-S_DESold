@@ -57,7 +57,7 @@ def finalPermute(input):
     return p_reverse_result
 
 
-# 二进制转换
+# 二进制转换(S-BOX)
 def binary(a):
     if a == 3:
         return [1, 1]
