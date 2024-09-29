@@ -127,12 +127,15 @@ class MainWindow(QMainWindow):
 
         # 使用下拉框实现功能的变换
         self.combo_box = QComboBox()
-        self.combo_box.addItem("二进制加密")
-        self.combo_box.addItem("ASCII 加密")
-        self.combo_box.addItem("Unicode 加密")
+        self.combo_box.addItem("二进制加解密")
+        self.combo_box.addItem("ASCII 加解密")
+        self.combo_box.addItem("Unicode 加解密")
         self.combo_box.setFont(font)
         self.combo_box.setMinimumHeight(100)
         self.combo_box.currentIndexChanged.connect(self.change_endecryption_type)
+
+        # 初始设置位二进制加解密
+        self.change_endecryption_type(0)
         layout.addWidget(self.combo_box)
 
         self.hint_label = QLabel('提示：')
