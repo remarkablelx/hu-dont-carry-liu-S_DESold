@@ -159,6 +159,8 @@ class MainWindow(QMainWindow):
         self.key_input.setPlaceholderText("请输入密钥")
         self.key_input.setFont(font)
         self.key_input.setMinimumHeight(100)
+        self.key_input.setEchoMode(QLineEdit.Password)  # 设置为密码模式，输入内容将被隐藏
+
         hbox2 = QHBoxLayout()
         hbox2.addWidget(key_label)
         hbox2.addWidget(self.key_input)
