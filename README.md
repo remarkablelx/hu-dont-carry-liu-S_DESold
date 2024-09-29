@@ -1,5 +1,5 @@
 # About this repository
-* A Repository for cryptography homework of S-DES instance, teamed up with Yuyang Hu @[Gracivio](https://github.com/Gracivio).
+* A Repository for cryptography homework of S-DES instance, teamed up with Xiao Liu @[remarkablelx](https://github.com/remarkablelx).
 
 # Introduction of S-DES
 * S-DES, simple-data encryption standard, is a classic cryptography algorithm, which including mechanics such as **S-Boxes, P-Boxes, swapper function and shift function.**
